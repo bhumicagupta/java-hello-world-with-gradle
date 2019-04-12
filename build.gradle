@@ -22,6 +22,16 @@ buildscript {
 
 apply plugin: "org.sonarqube"
 
+sonarqube {
+    properties {
+        
+        property "sonar.host.url", "http://10.210.54.201:9000"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.projectName","Gradle Demo"
+        property "sonar.projectKey", "org.sonarqubeGrdaleCodeCoverage"
+    }
+}
+
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
